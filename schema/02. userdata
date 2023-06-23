@@ -1,0 +1,117 @@
+Users
+- id
+- name
+- phone
+- email
+- email_verified_at (datetime)
+- password
+- remember_token
+- status (smallInteger, enum)
+
+UserProfile
+- id
+- user_id (users.id)
+- first_name
+- second_name
+- last_name
+- location_id (locations.id)
+- international_location_id (locations.id)
+- address
+- birth_date
+- gender (smallInteger, enum)
+- avatar_url
+- passport_file
+- academic_degree (Илмий даражаси)
+- scientific_title (Илмий унвони)
+- job_position
+- work_experience (smallInteger, enum)
+- additional_info (text)
+- achievements (text)
+- family_status (smallInteger, enum)
+- hobbies (text)
+- interests (text)
+- opinions_about_uzbekistan (text)
+- suggestions_and_recommendations (text)
+- timezone (smallInteger, enum)
+- language (locale.code) (User preferred language)
+
+BannerExpertOrVolunteerPage
+- id
+- image
+- title_uz
+- title_oz
+- title_ru
+- title_en
+- text_uz
+- text_oz
+- text_ru
+- text_en
+- type [1-expert, 2-volunteer]
+
+
+UserEducationInfo
+- id
+- user_id (users.id)
+- institution
+- level (education_level)
+- faculty
+- specialization_id
+- type [1-Uzbekistan, 2-World]
+
+Specialization
+- id
+- title
+
+
+UserEmploymentInfo
+- id
+- user_id (users.id)
+- company
+- position
+- location_id (locations.id)
+- start_date
+- end_date
+
+CompatriotExperts (Vatandosh ekspertlar)
+- id
+- user_id (users.id)
+- user_education_info_id (UserEducationInfo.id)
+- institution_location_id (locations.id)
+- user_employment_info_id (UserEmploymentInfo.id)
+- user_profile_id (UserProfile.id)
+- academic_degree
+- scientific_title
+- main_science_directions (Асосий илмий қизиқиш йўналишлари)
+- topic_of_scientific_article (Илмий мақола мавзуси)
+- scientific_article_created_at (date)
+- article_published_journal_name (Илмий мақола журнал номи)
+- article_url (Илмий мақола URL манзили)
+- article_file (Илмий мақола файли)
+- type [1-expert, 2-volunteer]
+- suggestions
+- additional_information
+- user_volunteer_activity_id (UserVolunteerActivity.id)
+- cv_file
+- status
+
+UserVolunteerActivity
+- id
+- user_id (User.id)
+- title
+- description
+- images []
+
+VolunteerImages
+- id
+- img
+- user_volunteer_activity_id (UserVolunteerActivity)
+
+CompatriotMenus
+- id
+- user_id (users.id)
+- name_uz
+- name_oz
+- name_ru
+- name_en
+- type
+

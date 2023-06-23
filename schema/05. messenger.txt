@@ -1,0 +1,27 @@
+ChatRooms
+- id
+- name
+- description
+- avatar_image
+- type (group, private)
+- avatar_colors(json) [from, to] (gradient image)
+
+UserChatRooms
+- room_id
+- user_id
+
+ChatRoomMessages
+- id
+- room_id
+- user_id
+- message
+- type(text, image, video, audio)
+- status
+- reply_to
+
+RoomJoinRequests
+- id
+- room_id
+- user_id
+- type (group, private)
+- status (pending, accepted, rejected)

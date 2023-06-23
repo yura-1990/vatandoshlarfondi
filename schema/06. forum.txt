@@ -1,0 +1,33 @@
+ForumCategories
+- id
+- parent_id
+- name
+- status
+
+ForumTopics
+- id
+- forum_category_id
+- user_id
+- title
+- status
+
+ForumPosts
+- id
+- forum_topic_id
+- user_id
+- content
+- status
+
+ForumPostComments
+- id
+- forum_post_id
+- user_id
+- content
+- reply_to
+- status
+
+ForumPostReactions
+- id
+- forum_post_id
+- user_id
+- reaction

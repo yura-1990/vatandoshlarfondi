@@ -1,0 +1,21 @@
+NewsOrEventType
+ - id
+ - name
+
+NewsOrEvents
+ - id
+ - image
+ - images
+ - data
+ - status
+ - tags
+ - text
+ - title
+ - viewers
+ - type
+
+
+
+
+
+

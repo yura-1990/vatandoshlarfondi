@@ -1,0 +1,88 @@
+courses
+- id
+- title (string(255))
+- description (text)
+- content (text, nullable)
+- locale (string(5) *example: 'ru', 'uz', 'oz', 'en')
+- order (smallint)
+- status (smallint, [10:Active, 0:InActive])
+
+lessons
+- id
+- course_id
+- parent_id
+- type (string(20), [video, document, presentation, text ...])
+- title (string(255))
+- description (text)
+- content (text, nullable)
+- order (smallint)
+- duration (string(255) nullable)
+- path (string(255) nullable)
+- status (smallint, [10:Active, 0:InActive])
+
+course_attachments
+- id
+- lesson_id
+- type (string(20), [video, audio, photo, document])
+- title (string(255))
+- path (string(255))
+
+course_certificates
+- id
+- course_id
+- title (string(255))
+- description (text)
+
+course_certificate_attachments
+- id
+- certificate_id
+- name (string(255))
+- path (string(255))
+
+user_courses
+- id
+- user_id
+- course_id
+- course_rate (string(5), nullable)
+- certificate_id (nullable)
+- is_finished (boolean)
+
+user_lessons
+- id
+- user_id
+- lesson_id
+
+
+exams
+- id
+- course_id
+- title (string(255))
+
+questions
+- id
+- exam_id
+- type (smallint, 1 : test, 2 : question)
+- file_path (string(255))
+- question (text)
+
+question_variants
+- id
+- question_id
+- answer (text)
+- file_path (string(255))
+- is_true (false)
+
+user_exam
+- id
+- user_id
+- exam_id
+- exam_rate (string(5), nullable)
+
+user_exam_answers
+- id
+- user_id
+- exam_id
+- question_id
+- user_answer (text)                    // agar test bo'lsa, javobini to'liq yoziladi
+- correct_answer (text)                 // agar test bo'lsa, javobini to'liq yoziladi
+- is_correct (boolean, default(false))

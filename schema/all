@@ -1,0 +1,86 @@
+Public
+- failed_jobs
+- telescope
+- activity_log
+- visitor
+- websockets
+- locales
+- locations
+- restricted_words
+- dictionaries (key: speciality, education_level, job_skills, languages, languages_level, employment_type, schedule_type, family_status, course_level)
+
+Userdata
+- users
+- user_profile
+- user_education_info
+- user_employment_info
+- compatriot_experts
+- passport_tables (oauth)
+
+
+CV (Draft)
+- user_cvs
+- user_cv_citizenship
+- user_cv_educations
+- user_cv_experiences
+- user_cv_languages
+- user_cv_employment_types
+- user_cv_schedule_types
+
+Media/Publications (Nomni o'ylash kerak, media va maqolalar uchun)
+- media_categories
+- media
+- media_sources
+- media_comments
+
+Messenger
+- chat_rooms
+- user_chat_rooms
+- chat_room_messages
+- room_join_requests
+
+Forum
+- forum_categories
+- forum_topics
+- forum_posts
+- forum_post_comments
+- forum_post_reactions
+
+OnlineCourses
+- courses
+- course_attachments
+- course_certificates
+- course_certificate_attachments
+- user_courses
+- exams
+- questions
+- question_variants
+- user_exam
+- user_exam_answers
+
+OnlineApplications
+- universities
+- faculties
+- departments
+- university_requirements
+- university_appliers
+- university_applier_attachments
+
+Quiz
+- quiz_categories
+- quizzes
+- quiz_participants
+
+PublicAssociations
+- communities
+- community_members
+- community_applications
+- community_news
+- community_events
+- community_attachments
+
+Events
+- events
+- event_speakers
+- event_attachments
+- event_applications

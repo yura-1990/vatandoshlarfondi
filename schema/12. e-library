@@ -1,0 +1,24 @@
+e_libraries
+- id
+- title
+- stars
+- viewers (bigint)
+- author
+- language
+- text (long text)
+- type
+- format
+- publication (data stamp)
+- ages (integer)
+- stir (bigint)
+- pages
+- thumbnail (poster)
+- image
+
+library_sliders
+- id
+- title
+- image
+- text
+
+

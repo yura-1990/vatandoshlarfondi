@@ -1,0 +1,25 @@
+events
+- id
+- type(conference, webinar, event)
+- title (string(255))
+- url (string(255))
+- start_date (datetime)
+- status (smallint)
+
+event_speakers
+- id
+- event_id
+- avatar_path (string(255))
+- full_name (string(255))
+- info (text)
+
+event_attachments
+- id
+- event_id
+- name (string(255))
+- path (string(255))
+
+event_applications
+- id
+- user_id
+- event_id

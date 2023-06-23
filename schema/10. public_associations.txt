@@ -1,0 +1,55 @@
+communities
+- id
+- name (string(255))
+- title
+- description (text)
+- document (file)
+- logo (img)
+- admin_id (users(role: community_admin))
+- director (string)
+- director_img
+- work (faoliyati)
+- created_date (tashkil etilgan sana)
+- members (int)
+- achievement (string(255))
+- region_id (lacations lacation_id = 0)
+- city_id (lacations lacation_id != 0)
+- phone (string(20))
+- email (string(50))
+- address (string(255))
+- site (string(255))
+- status (smallint)
+
+community_members
+- id
+- community_id
+- user_id
+
+community_applications
+- id
+- community_id
+- user_id
+- reject_reason (string(255))(nullable)
+- status (smallint, 1 : new, 10 : accepted, 0 : not_accepted)
+
+community_news
+- id
+- title (string(255))
+- description (string(255))
+- content (text)
+- date (datetime)
+
+community_events
+- id
+- title (string(255))
+- content (text)
+- date (datetime)
+
+community_attachments
+- id
+- type (string(10), [news, events])
+- community_news_id (nullable)
+- community_event_id (nullable)
+- community_id (nullable)
+- path (string(255))
+- order (smallInt(default(1)))

@@ -1,0 +1,21 @@
+locales
+- id
+- name
+- code (string: 10)
+
+locations
+- id
+- parent_id (locations.id)
+- name
+- code (string: 10)
+- locale (locales.code)
+
+restricted_words
+- id
+- word
+
+dictionaries
+- id
+- title
+- key (speciality, education_level, job_skills, languages, languages_level, employment_type, schedule_type, family_status, course_level)
+- locale (locales.code)

@@ -1,0 +1,55 @@
+about_uzbekistan_page_menus
+- id
+- name
+- images [array]
+
+page_menu_contents
+- id
+- title
+- text
+- about_uzbekistan_page_menu_id (about_uzbekistan_page_menus.id)
+
+cities
+- id
+- name
+
+sightseeing_places
+- id
+- city_id (cities.id)
+- image (big)
+- thumbnail (image small)
+- title
+- content_title
+- text
+
+city_content_infos
+- id
+- city_id (cities.id)
+- sightseeing_place_id (sightseeing_places.id)
+- title
+- content
+
+city_galleries
+- id
+- city_id (cities.id)
+- image
+- title
+- download
+- share
+
+city_videos
+- id
+- title
+- content
+- city_id (cities.id)
+- video
+- download
+- share
+
+city_3Ds
+- id
+- city_id (cities.id)
+- image
+- title
+- share
+- download

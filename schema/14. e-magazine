@@ -1,0 +1,42 @@
+months
+- id
+- name
+
+e_magazine_menu
+- id
+- name
+- background_image
+- title
+- text
+- url
+
+e_magazines
+- id
+- thumbnail
+- month_id
+- start_data_edition
+- title
+- short_content
+- images
+- text
+- pages
+- viewers
+
+about_e_magazines
+- id
+- e_magazine_id
+- images
+- short_title
+- title
+- pages
+
+e_magazine_tip
+- id
+- background_image
+- image
+- title
+- content
+
+
+
+

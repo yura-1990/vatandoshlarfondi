@@ -1,0 +1,24 @@
+meetings
+- id
+- title (string(255))
+- description ()
+- type(conference, webinar, event)
+- start_date (datetime)
+- url (string(255))
+- image (string(255))
+- video (string(255))
+- status (smallint)
+
+meeting_speakers
+- id
+- meeting_id
+- image (string(255))
+- full_name (string(255))
+- info (text)
+- special (string)
+
+
+meeting_users
+- id
+- user_id
+- meeting_id

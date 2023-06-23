@@ -1,0 +1,32 @@
+MediaCategories
+- id
+- name
+- type (string) (enum: media, library, onlineEducation)
+- locale
+
+Media
+- id
+- media_category_id
+- type (string(15), 3d, video, photo, other)
+- name
+- description
+- content
+- tags (text)
+- read_count
+- is_top
+- is_recommended
+- views_count (default: 0)
+- locale (locales.code)
+
+MediaSources
+- id
+- media_id
+- source
+- source_type (string(15), video, photo, other)
+
+MediaComments
+- id
+- media_id
+- user_id
+- comment
+- status

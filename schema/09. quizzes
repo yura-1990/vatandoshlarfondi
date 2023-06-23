@@ -1,0 +1,49 @@
+quiz_categories
+- id
+- title (string(255))
+- description (text)
+- status  (smallint, 10 : Active, 0 : InActive)
+
+quizzes
+- id
+- title (string(255))
+- description (text)
+- image
+- type (test, images, video, text )
+- started_at (datetime)
+- finished_at (datetime)
+- count
+- status  (smallint, 10 : Active, 0 : InActive)
+
+quiz_participants
+- id
+- quiz_id
+- user_id
+- is_win (boolean, default(false))
+- position(o'rin)
+- link(nullable)
+- doc
+- question
+
+quiz_questions
+- id
+- quiz_id
+- question
+- image
+- order
+
+quiz_answers
+- id
+- quiz_question_id
+- answer
+- image
+- is_correct
+- order
+
+
+
+quiz_participant_images
+- id
+- image
+- quiz_participant_id
+

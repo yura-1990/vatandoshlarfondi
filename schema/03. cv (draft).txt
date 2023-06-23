@@ -1,0 +1,55 @@
+UsersCvs
+- id
+- first_name
+- last_name
+- email
+- phone_number
+- location_id (state)
+- birth_date
+- gender
+- desired_position
+- desired_salary
+- is_want_relocation
+
+UserCvCitizenship
+- id
+- user_cv_id
+- location_id (country)
+
+UserCvEducations
+- id
+- user_cv_id
+- level (education_level)
+- institution
+- faculty
+- specialization
+- graduation_year
+
+UserCvWorkingPlaces
+- id
+- user_cv_id
+
+UserCvExperiences
+- id
+- user_cv_id
+- company_name
+- company_id
+- position
+- job_responsibilities
+- start_date
+- end_date
+- tags (text: php, laravel, mysql, etc)
+
+UserCvLanguages
+- id
+- user_cv_id
+- language_id
+- level (language_level)
+
+UserCvEmploymentTypes
+- user_cv_id
+- employment_type_id
+
+UserCvScheduleTypes
+- user_cv_id
+- schedule_type_id

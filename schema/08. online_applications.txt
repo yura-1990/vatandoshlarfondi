@@ -1,0 +1,40 @@
+universities
+- id
+- location_id
+- name (string(255))
+- description (text)
+
+faculties
+- id
+- university_id
+- name (string(255))
+- description (text)
+
+departments
+- id
+- faculty_id
+- name (string(255))
+- description (text)
+
+university_requirements
+- id
+- university_id
+- title (string(255))
+- description (text)
+
+university_appliers
+- id
+- university_id
+- faculty_id
+- user_id (null)
+- education_type (string(20) [online, offline])
+- last_education_type (string(20), [school, college, bachelor, master])
+- last_education_number (string(255))
+- last_education_address (string(255))
+- status (smallint, [1:new, 10:send_to_university, 0:rejected])
+
+university_applier_attachments
+- id
+- university_application_id
+- attachment_type (string(20), [passport, diploma, photo, other])
+- path (string(255))
